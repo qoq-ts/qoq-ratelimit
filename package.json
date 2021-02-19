@@ -1,0 +1,34 @@
+{
+  "name": "qoq-ratelimit",
+  "version": "0.0.1",
+  "main": "index.lib.js",
+  "module": "index.es.js",
+  "typings": "index.d.ts",
+  "repository": "git@github.com:qoq-ts/qoq-ratelimit.git",
+  "author": "原罪 <531362022@qq.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "peerDependencies": {
+    "qoq": ">=0.0.16"
+  },
+  "dependencies": {
+    "@types/ioredis": "4.19.4",
+    "koa-ratelimit": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa-ratelimit": "^4.2.2",
+    "@types/node": "^14.14.30",
+    "qoq": "^0.0.16",
+    "typescript": "^4.1.5"
+  },
+  "files": [
+    "package.json",
+    "index.d.ts",
+    "index.es.js",
+    "index.lib.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
