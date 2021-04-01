@@ -1,6 +1,6 @@
 {
   "name": "qoq-ratelimit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.lib.js",
   "module": "index.es.js",
   "typings": "index.d.ts",
@@ -11,17 +11,17 @@
     "node": ">=10.17.0"
   },
   "peerDependencies": {
-    "qoq": ">=0.0.16"
+    "qoq": ">=0.1.0"
   },
   "dependencies": {
-    "@types/ioredis": "4.19.4",
-    "koa-ratelimit": "5.0.0"
+    "@types/koa-ratelimit": "^4.2.2",
+    "@types/ioredis": "^4.22.2",
+    "koa-ratelimit": "^5.0.0"
   },
   "devDependencies": {
-    "@types/koa-ratelimit": "^4.2.2",
-    "@types/node": "^14.14.30",
-    "qoq": "^0.0.16",
-    "typescript": "^4.1.5"
+    "@types/node": "^14.14.37",
+    "qoq": "^0.0.25",
+    "typescript": "^4.2.3"
   },
   "files": [
     "package.json",
