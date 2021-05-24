@@ -8,11 +8,12 @@ interface RedisDriver {
 }
 
 interface MemoryDriver {
-  driver: 'memory',
+  driver: 'memory';
   db: Map<any, any>;
 }
 
-export type RateLimitOptions = (RedisDriver | MemoryDriver) & Omit<MiddlewareOptions, 'db' | 'driver'>;
+export type RateLimitOptions = (RedisDriver | MemoryDriver) &
+  Omit<MiddlewareOptions, 'db' | 'driver'>;
 
 export class RateLimit extends Slot<Slot.Web> {
   constructor(options: RateLimitOptions) {

@@ -1,33 +1,43 @@
 {
   "name": "qoq-ratelimit",
-  "version": "0.0.2",
-  "main": "index.lib.js",
-  "module": "index.es.js",
-  "typings": "index.d.ts",
+  "version": "0.0.3",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
   "repository": "git@github.com:qoq-ts/qoq-ratelimit.git",
   "author": "原罪 <531362022@qq.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=10.17.0"
+    "node": "^14.15.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.js"
+    },
+    "./": "./"
+  },
+  "scripts": {
+    "prepublishOnly": "ts-prepublish"
   },
   "peerDependencies": {
     "qoq": ">=0.1.0"
   },
   "dependencies": {
+    "@types/ioredis": "^4.26.4",
     "@types/koa-ratelimit": "^4.2.2",
-    "@types/ioredis": "^4.22.2",
     "koa-ratelimit": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.37",
-    "qoq": "^0.0.25",
-    "typescript": "^4.2.3"
+    "@types/node": "^15.6.0",
+    "prettier": "^2.3.0",
+    "qoq": "^0.0.55",
+    "ts-prepublish": "^1.0.0",
+    "typescript": "^4.2.4"
   },
   "files": [
     "package.json",
-    "index.d.ts",
-    "index.es.js",
-    "index.lib.js",
+    "es",
+    "lib",
     "README.md",
     "LICENSE"
   ]
